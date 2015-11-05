@@ -1,0 +1,13 @@
+script: return 0
+before_deploy: make release
+deploy:
+  provider: s3
+  access_key_id: AKIAJBSHRZZD7LWIS2XQ
+  bucket: sex.rit.www
+  skip_cleanup: true
+  local-dir: release
+  acl: public_read
+  on:
+    repo: citruspi/rit.sex
+  secret_access_key:
+    secure: hVerEOMtj5vYdc5h74DHItrNkUIze1EuNziK/SooO7ivJRTG/8MNbAvXDl7X9dki5TecIxVniz4vdMxkh0yvXgRyfzwhPrKLQ5/tjx1ZzeMuuhc2XxNNJ9cR2uN57lckKjU651lYcQ3IJuQk/ZiwMHdhES2PBL4PjKMsdrtFARnl3DAmBxH240ZYhpXTFqmvtFhMVlS/muWYTxFmFAXiZMtfEwbeOUxMmk7HXavTnNq+clccrpsZft/ZNHSIYvBJf83Y/IiS1KdH754KSTleHNHyD9ijyhWmWxerdkKNTGcnmXbxoEmQfHsGZvHVhQcGdS7v4BoB5cXdqSkqMVsridEvRbPVz/wryAexsKHhIN28fpb8jfMUMqQ1OrIDEhqhjDp8JEUGiKNAB0W3T7tbB0uofIs4KavlEVmz9ai5YZOAHm7eys0+TsdAb/4G0F9XU6d5FUbXwSTJQ31YPLx1CyhCLFyWzH40vHEQewm81MYrMKiHsRVAMs24z/i4geF9whi6leXJf5AIbzvG1ixo+0LIwFDSmRbka9QHeipgfsCgSRPUjdy6v25y5PKNHFJLjVUIrvRctnOgsm+hBcCsW0pjKGYgg3W9dYQDV5d1ovZJCrJOPVQSkKF+7GayERveCPgIdEA1qaRzlsMZxDe49ptjSCqJfQGFlLN3zqO0+eY=

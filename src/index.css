@@ -1,0 +1,22 @@
+body {
+    background-color: #ecf0f1;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c3e50;
+    font-family: Helvetica;
+    font-size: 20rem;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c3e50;
+    font-family: Helvetica;
+    font-size: 5.5rem;
+    font-style: italic;
+}
